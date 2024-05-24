@@ -1,0 +1,481 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.loader.hidden {
+    display: none;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+header .icon{
+    width: 30px;
+    height: auto;
+    margin: 10px;
+}
+header .content{
+    display: flex;
+    align-items: center;
+    
+}
+header .content h6{
+    color: gray;
+}
+header .dr, .ind{
+    width: 50px;
+    height: auto;
+}
+nav {
+    background: rgb(84, 183, 250);
+    color: #fff;
+    padding: 0 20px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li {
+    margin: 20px 10px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+nav ul input{
+    background-color: #007bff;
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+.hero {
+    position: relative;
+    background: url('https://www.manipalhospitals.com/uploads/blog/common-reasons-for-knee-pain.webp') no-repeat center center/cover;
+    height: 400px;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+    padding-left: 50px;
+}
+.hero span{
+    color: red;
+}
+.hero h1 {
+    font-size: 48px;
+}
+.hero button {
+    padding: 10px 20px;
+    background: #007bff;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.tabs {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.tabs .tab-link {
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+.tab-content {
+    /* max-width: 800px; */
+    margin: 20px 0;
+    padding: 20px;
+    /* display: none; */
+}
+.overview{
+    display: flex;
+    
+}
+.overview img{
+    width: 90%;
+    height: auto;
+}
+.overview div, .tab-content .content {
+    width: 50%;
+    margin-left: 50px;
+    border-bottom: 1px dashed rgb(35, 161, 245);
+}
+.contact-form .form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 200%;
+    left: 60%;
+    width: 100%;
+    /* height: 100%; */
+    max-width: 400px;
+    
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    color: #4992ff;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.contact-form input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4992ff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #4992ff;
+}
+.tab-content.active {
+    display: block;
+}
+.faq-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.faq-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+.faq-question {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+}
+.faq-answer {
+    display: none;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.faq-question span {
+    font-size: 24px;
+    font-weight: bold;
+    padding-right: 20px;
+}
+.owl-carousel .item {
+    padding: 15px;
+    background: #fff;
+    margin: 10px;
+    /* text-align: center; */
+    display: flex;
+}
+.tab-content .owl-carousel .item .item-content{
+    margin: 10px;
+    border: 1px solid rgb(199, 197, 197);
+}
+.owl-carousel .item h5{
+    padding: 15px;
+}
+.owl-carousel .item img {
+    max-width: 100%;
+    padding: 15px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.owl-carousel .item .avatar{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.owl-carousel .item .avatar img{
+    width: 90px;
+    height: auto;
+    border-radius: 50px;
+    margin: 0;
+}
+.tab-doctors .content, .tab-doctors .owl-theme .item{
+    background-color: rgb(230, 252, 252);
+}
+.tab-doctors .content h2, .hospitals .content h2{
+    text-align: center;
+    padding-top: 50px;
+}
+.tab-doctors .owl-carousel .item .item-content{
+    background-color: #fff;
+    margin: 30px;
+    padding-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+.item-content h4, h6{
+    text-align: center;
+   
+}
+.tab-doctors .item-content h4{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: red;
+}
+
+.item-content h5{
+    padding: 0;
+}
+.content h2 span{
+    color: red;
+    font-family: sans-serif;
+}
+.hospitals .owl-carousel .item .item-content{
+    border: 1px dashed red;
+    margin: 10px;
+    border-radius: 10px;
+}
+.hospitals .item-content h6{
+    color: red;
+}
+.hospitals-link{
+    text-align: center;
+    margin: 20px;
+}
+.hospitals-link span{
+    color: red;
+}
+footer .upper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #6bb7eb;
+    padding: 50px;
+    color: #fff;
+}
+.upper .contact-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.upper .contact-section h4{
+    padding: 5px;
+    margin-left: 10px;
+    font-weight: 600;
+    border-left: 1px solid white;
+}
+footer .middle, .lower{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 50px;
+    border-bottom: 1px solid white;
+    color: white;
+    background-color: #0b2432;
+}
+footer .middle div{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+footer .about{
+    width: 400px;
+}
+footer .lower .icons img{
+    width: 30px;
+    height: auto;
+    margin: 5px;
+}
+footer .lower .icons{
+    margin-bottom: 20px;
+}
+footer .lower h6 span{
+    color: #6bb7eb;
+}
+footer .copy-rights{
+    background-color: #4992ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+@media screen and (max-width: 750px){
+    header h5, h6{
+        display: none;
+    }
+    nav, nav ul{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    nav ul li {
+        margin: 10px 10px;
+    }
+    nav ul input {
+        background-color: white;
+        border: none;
+        padding: 10px;
+        outline: none;
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 8px;
+    }
+    
+    
+    header .logo{
+        width: 100px;
+        height: auto;
+    }
+    header .dr, .icon, .ind{
+        width: 30px;
+        height: auto;
+    }
+    .hero{
+        padding-left: 20px;
+    }
+    .hero h4{
+        font-size: 15px;
+    }
+    .hero h1{
+        font-size: 25px;
+    }
+    .tabs {
+        display: flex;
+        padding: 10px;
+        overflow: scroll;
+    }
+    .tabs .tab-link {
+        padding: 0;
+        font-size: 10px;
+    }
+    .overview{
+        display: flex;
+        flex-direction: column;
+    }
+    .overview div, .tab-content .content {
+        width: 100%;
+        margin: 10px;
+        border-bottom: 1px dashed rgb(35, 161, 245);
+    }
+    .contact-form {
+        display: flex;
+        align-items:center ;
+        justify-content: center;
+        position: absolute;
+        display: none;
+    }
+    .contact-form .form-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+    .tab-content .item, .tab-doctors .item, .hospitals .item{
+        display: flex;
+        flex-direction: column;
+    }
+    .tab-doctors .content h2, .hospitals .content h2 {
+        text-align: center;
+        padding-top: 20px;
+    }
+    footer .upper{
+        padding: 10px;
+    }
+    footer .upper h6{
+        font-size: 13px;
+        display: block;
+    }
+    footer .upper h1{
+        font-size: 20px;
+    }
+    footer .upper h4{
+        font-size: 17px;
+    }
+    footer .middle, .lower {
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+        
+    }
+}
+@media screen and (min-width: 751px)and (max-width:1200px){
+    .tab-content .item, .tab-doctors .item, .hospitals .item{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form .form-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 70%;
+        left: 60%;
+        width: 100%;
+        
+    }
+    #stories .content, #topdoctors, #tophospitals{
+        width: 100%;
+    }
+    .item-content h5{
+        padding: 0;
+        font-size: 15px;
+    }
+    .avatar h4{
+        font-size: 15px;
+    }
+    .avatar h6{
+        font-size: 13px;
+    }
+    .owl-carousel .item .avatar img{
+        width: 70px;
+        height: auto;
+        border-radius: 50px;
+        margin: 0;
+    }
+    .tab-doctors h4{
+        font-size: 15px;
+    }
+    .tab-doctors h6{
+        font-size: 12px;
+    }
+}
